@@ -58,7 +58,7 @@ class HomeScreenActivity : AppCompatActivity(), View.OnClickListener {
      * */
     override fun onClick(v: View) {
         when (v.id) {
-            R.id.buttonSubmit -> {
+            R.id.buttonCreateProduct -> {
                 val intent = Intent(this@HomeScreenActivity, CreateProductActivity::class.java)
                 val product = Product()
                 intent.putExtra(CreateProductActivity.PRODUCT_DETAIL, product)
