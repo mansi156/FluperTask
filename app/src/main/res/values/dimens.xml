@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_padding">6dp</dimen>
+    <dimen name="big_padding">16dp</dimen>
+    <dimen name="small_imageview_size">45dp</dimen>
+    <dimen name="padding_2">2dp</dimen>
+    <dimen name="default_title_textsize">20sp</dimen>
+    <dimen name="small_title_textsize">15sp</dimen>
+    <dimen name="large_title_textsize">25sp</dimen>
+</resources>

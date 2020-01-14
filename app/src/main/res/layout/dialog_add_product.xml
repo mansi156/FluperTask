@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewCreateProduct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big_padding"
+        android:gravity="center"
+        android:text="@string/create_product"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/default_title_textsize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextProductName"
+        style="@style/edittext_style"
+        android:hint="@string/product_name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCreateProduct"
+        app:layout_constraintStart_toStartOf="@+id/textViewCreateProduct"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCreateProduct" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextDescription"
+        style="@style/edittext_style"
+        android:hint="@string/description"
+        android:inputType="text"
+        android:lines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextProductName" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextPrice"
+        style="@style/edittext_style"
+        android:hint="@string/price"
+        android:inputType="number"
+        android:lines="1"
+        android:maxLength="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDescription" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewSelectAnyColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/big_padding"
+        android:text="@string/select_any_one_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPrice" />
+
+    <Spinner
+        android:id="@+id/spinnerColor"
+        style="@style/edittext_style"
+        android:hint="@string/price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSelectAnyColor" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_padding"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutImages" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewSelectAnyImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/big_padding"
+        android:text="@string/select_any_one_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerColor" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutImages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/big_padding"
+        android:layout_marginTop="@dimen/small_padding"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSelectAnyImage">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutFirstImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_2"
+            android:background="@drawable/product_selection_background">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageviewFirstImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="@dimen/small_padding"
+                app:srcCompat="@drawable/top_one" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSecondImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_2">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imagevieSecondImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="@dimen/small_padding"
+                app:srcCompat="@drawable/top_two" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutThirdImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_2">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageviewThirdImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="@dimen/small_padding"
+                app:srcCompat="@drawable/top_three" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_padding"
+        android:layout_marginEnd="@dimen/small_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

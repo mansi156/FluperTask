@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/small_padding"
+    app:cardCornerRadius="@dimen/big_padding">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutCompleteView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_padding">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageProductImage"
+            android:layout_width="@dimen/small_imageview_size"
+            android:layout_height="@dimen/small_imageview_size"
+            android:padding="@dimen/padding_2"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/main_background" />
+
+        <TextView
+            android:id="@+id/textViewProductName"
+            style="@style/word_title"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/big_padding"
+            android:layout_toStartOf="@+id/linearLayoutEditDelete"
+            android:layout_toEndOf="@+id/imageProductImage"
+            android:text="@string/product_name" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutEditDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textViewProductName">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@android:drawable/ic_menu_edit"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/small_padding"
+                app:srcCompat="@android:drawable/ic_menu_delete"/>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

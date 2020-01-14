@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FluperTask</string>
+    <string name="hint_word">Word...</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">Word not saved because it is empty.</string>
+    <string name="create_product">CREATE PRODUCT</string>
+    <string name="show_product">SHOW PRODUCT</string>
+    <string name="product_name">Product Name</string>
+    <string name="submit">Submit</string>
+    <string name="description">Description</string>
+    <string name="price">Price</string>
+    <string name="select_any_one_image">Select any one image</string>
+    <string name="enter_first_store">Enter first store</string>
+    <string name="enter_second_store">Enter second store</string>
+    <string name="select_any_one_color">Select any color</string>
+    <string name="selected_colour">Selected Colour</string>
+    <string name="hide_product">HIDE PRODUCT</string>
+</resources>
