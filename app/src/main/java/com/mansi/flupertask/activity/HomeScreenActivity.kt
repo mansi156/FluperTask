@@ -48,7 +48,7 @@ class HomeScreenActivity : AppCompatActivity(), View.OnClickListener {
             }
         })
 
-        // Button Clicks
+        // Button on Clicks
         buttonCreateProduct.setOnClickListener(this)
         buttonShowProduct.setOnClickListener(this)
     }
